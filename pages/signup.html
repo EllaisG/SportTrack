@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset=”UTF-8”>
+        <meta name="Sign up" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="../styles/signup.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>S'inscrire</h1>
+            <form id="sign-up">
+                <div class="form-group">
+                    <label for="nom">Nom</label><br>
+                    <input type="text" required="required" id="nom" name="nom" placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom</label><br>
+                    <input type="text" required="required" id="prenom" name="prenom" placeholder="Votre prénom">
+                </div>
+                <div class="form-group">
+                    <label for="date-naissance">Date de Naissance :</label><br>
+                    <input type="date" required="required" id="date-naissance" name="date-naissance">
+                </div>
+                <div class="form-group">
+                    <label for="sexe">Selectionner votre sexe: </label><br>
+                    <select id="sexe" name="sexe">
+                        <option value="autre">Autre</option>
+                        <option value="femme">femme</option>
+                        <option value="homme">homme</option>
+                    </select>
+                </div> 
+                <div class="form-group">
+                    <label for="taille">Taille</label><br>
+                    <input type="text" required="required" id="taille" name="taille" placeholder="en cm">
+                </div>
+                <div class="form-group">
+                    <label for="poids">Poids</label><br>
+                    <input type="text" required="required" id="poids" name="poids"placeholder="en kg">
+                </div>
+                <div class="form-group">
+                    <label for="mail">Adresse électronique</label><br>
+                    <input type="email" required="required" id="mail" name="mail" placeholder="Saisir votre adresse électronique">
+                </div>
+                <div class="form-group">
+                    <label for="mdp">Mot de passe</label><br>
+                    <input type="password" required="required" id="mdp" name="mdp" placeholder="Saisir votre mot de passe">
+                </div>
+                
+                <input type="submit" value="Sign up">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --foreground-color: #e8e8e8;
+    --background-color: #1a1a1a;
+    --accent-color: #61dafb;
+    font: 16px sans-serif;
+}
+body {
+    background: url("../img/maprunning.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.main {
+    max-width: 100%;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.75);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1 {
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.user-info {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+}
+.user-info a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.activity {
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+th {
+    background-color: #33333399;
+    color: white;
+}
+#dropzone {
+    margin-top: 30px;
+    height: 90px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 50px;
+    border: 2px dashed #555;
+    color: #555;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#dropzone span {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#file-input {
+    top: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#file-input:hover {
+    cursor: pointer;
+}

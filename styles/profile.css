@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --foreground-color: #e8e8e8;
+    --background-color: #1a1a1a;
+    --accent-color: #61dafb;
+    font: 16px sans-serif;
+}
+body {
+    background: url("../img/maprunning.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 100%;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.75);
+    text-align: center;
+    margin-top: 30px;
+}
+.container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--foreground-color);
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--foreground-color);
+}
+.form-group input,
+.form-group select {
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select {
+    width: auto;
+}
+
+.form-group select {
+    height: 40px;
+}
+.btn-save {
+    width: 1;
+    background-color: #be4040;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.btn-save:hover {
+    background-color: #870600;
+}

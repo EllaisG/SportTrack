@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --foreground-color: #e8e8e8;
+    --background-color: #1a1a1a;
+    --accent-color: #61dafb;
+    font: 16px sans-serif;
+}
+body {
+    background: url("../img/maprunning.jpg") no-repeat top center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    height: 50px;
+    background-color: var(--background-color);
+}
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 5px;
+    color: var(--foreground-color);
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: var(--accent-color);
+    transition: 0.3s;
+}
+@media screen and (max-width: 500px) {
+    #header-links {
+        display: none;
+    }
+    header nav {
+        justify-content: center;
+    }
+}
+main {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 200px;
+    text-shadow: 0 0 10px var(--backgorund-color);
+}
+#logo h1 {
+    text-align: center;
+    color: var(--foreground-color);
+    text-shadow: 0 0 10px var(--foreground-color);
+    margin: 0;
+    font-size: 48px;
+    z-index: 1;
+}
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+#circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    border: var(--foreground-color) solid 5px;
+    border-radius: 100%;
+    z-index: 0;
+    transform: rotate(-10deg);
+}
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--background-color);
+}
+footer nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+footer nav ul li a {
+    text-decoration: none;
+    color: var(--foreground-color);
+}
